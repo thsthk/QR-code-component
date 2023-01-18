@@ -50,6 +50,7 @@
         display: block;
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
       }
       main {
         height: 100%;
@@ -57,43 +58,33 @@
         justify-content: center;
         align-items: center;
       }
-      figure {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .offscreen {
-        position: absolute;
-        right: -10000px;
-      }
-      .nowrap {
-        white-space: nowrap;
-      }
+
       .component {
         background-color: var(--COMPOENETBGCOLOR);
         display: flex;
         flex-flow: column nowrap;
         margin-top: 10px;
+        width: 19.5rem;
+        padding: 1rem;
+        border-radius: 16px;
+        box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
       }
       .paragraphs {
-        display: flex;
-        flex-flow: column nowrap;
         font-size: 15px;
+        text-align: center;
+        padding: 1.2rem;
       }
       .paragraph {
         color: var(--FONTCOLOR);
-        text-align: center;
-        font-size: 1rem;
+
+        margin-top: 1rem;
       }
-      .paragraphs__div {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      }
+
       .paragraph__bold {
         color: var(--BOLDFONTCOLOR);
         font-weight: var(--FBOLD);
+        margin-top: 1rem;
+        font-size: 1.3rem;
       }
       .attribution {
         font-size: 11px;
@@ -103,90 +94,43 @@
         color: hsl(228, 45%, 44%);
       }
 
-      @media (min-width: 375px) {
-        .component {
-          width: 80%;
-          padding: 1rem;
-          border-radius: 16px;
-          box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
-          /* row-gap: 1.6rem; */
-        }
-        img {
-          max-width: 100%;
-          border-radius: 10px;
-        }
-        .paragraphs {
-          row-gap: 1rem;
-          padding: 1.5rem;
-        }
-        .paragraph__bold {
-          font-size: 1.4rem;
-        }
-        .paragraph {
-          margin-left: 2rem;
-          margin-right: 2rem;
-        }
-      }
-      @media (min-width: 1440px) {
-        .component {
-          width: 43%;
-          padding: 1rem;
-          border-radius: 16px;
-          box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
-          /* row-gap: 1.6rem; */
-        }
-        img {
-          max-width: 100%;
-          border-radius: 10px;
-        }
-        .paragraphs {
-          row-gap: 1rem;
-          padding: 1rem;
-        }
-        .paragraph__bold {
-          font-size: 1.3rem;
-        }
-      }
+      /* .paragraph__bold {
+        font-size: 1.4rem;
+      } */
     </style>
   </head>
   <body>
     <main>
       <article class="component">
-        <div class="offscreen">A qr code</div>
-        <figure>
-          <img
-            src="./images/image-qr-code.png"
-            alt="QR code image"
-            title="QR code"
-          />
-          <figcaption class="offscreen">qr code</figcaption>
-        </figure>
+        <div class="offscreen">QR code to frontendmentor.io</div>
+        <img
+          src="./images/image-qr-code.png"
+          alt="QR code to frontendmentor.io"
+          title="QR code"
+        />
+
         <div class="paragraphs">
           <div class="paragraphs__div">
             <p class="paragraph__bold">
-              <span class="nowrap">Improve your front-end</span>
-              <span class="nowrap">skills by building projects </span>
+              Improve your front-end skills by building projects
             </p>
           </div>
 
           <div class="paragraphs__div">
             <p class="paragraph">
-              <span class="nowrap"> Scan the QR code to visit Frontend </span>
-              <span class="nowrap">
-                Mentor and take your coding skills to
-              </span>
-              the next level
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
             </p>
           </div>
         </div>
       </article>
     </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Seoha</a>.
-    </div>
+    </footer>
   </body>
 </html>
