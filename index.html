@@ -30,8 +30,8 @@
         --FLIGHT: 400;
       }
       body {
-        background-color: var(--BGCOLOR);
         min-height: 100vh;
+        background-color: var(--BGCOLOR);
         overflow: hidden;
       }
       *,
@@ -48,7 +48,6 @@
         height: auto;
       }
       main {
-        
         height: 100%;
         display: flex;
         justify-content: center;
@@ -101,14 +100,14 @@
 
       @media (min-width: 375px) {
         .component {
-          width: 85%;
+          width: 90%;
           padding: 1rem;
           border-radius: 16px;
           box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
           /* row-gap: 1.6rem; */
         }
         img {
-          width: 100%;
+          max-width: 100%;
           border-radius: 10px;
         }
         .paragraphs {
@@ -116,7 +115,11 @@
           padding: 1.7rem;
         }
         .paragraph__bold {
-          font-size: 1.5rem;
+          font-size: 2rem;
+        }
+        .paragraph {
+          margin-left: 2rem;
+          margin-right: 2rem;
         }
       }
       @media (min-width: 1440px) {
@@ -128,7 +131,7 @@
           /* row-gap: 1.6rem; */
         }
         img {
-          width: 100%;
+          max-width: 100%;
           border-radius: 10px;
         }
         .paragraphs {
@@ -144,13 +147,12 @@
   <body>
     <main>
       <article class="component">
+        <div class="offscreen">A qr code</div>
         <figure>
           <img
             src="./images/image-qr-code.png"
             alt="QR code image"
             title="QR code"
-            width="300px"
-            height="300px"
           />
           <figcaption class="offscreen">qr code</figcaption>
         </figure>
