@@ -34,10 +34,9 @@
         background-color: var(--BGCOLOR);
         overflow: hidden;
         display: flex;
-                display: flex;
         justify-content: center;
         align-items: center;
-     
+        flex-direction: column;
       }
       *,
       *::before,
@@ -55,9 +54,6 @@
       }
       main {
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
 
       .component {
@@ -73,12 +69,12 @@
       .paragraphs {
         font-size: 15px;
         text-align: center;
-        padding: 1.3rem;
+        padding: 1.2rem;
       }
       .paragraph {
         color: var(--FONTCOLOR);
-
-        margin-top: 1rem;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
       }
 
       .paragraph__bold {
@@ -103,7 +99,6 @@
   <body>
     <main>
       <article class="component">
-        <div class="offscreen">QR code to frontendmentor.io</div>
         <img
           src="./images/image-qr-code.png"
           alt="QR code to frontendmentor.io"
