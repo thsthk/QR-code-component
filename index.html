@@ -33,6 +33,10 @@
         min-height: 100vh;
         background-color: var(--BGCOLOR);
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       *,
       *::before,
@@ -70,6 +74,7 @@
         background-color: var(--COMPOENETBGCOLOR);
         display: flex;
         flex-flow: column nowrap;
+        margin-top: 10px;
       }
       .paragraphs {
         display: flex;
@@ -100,7 +105,7 @@
 
       @media (min-width: 375px) {
         .component {
-          width: 90%;
+          width: 80%;
           padding: 1rem;
           border-radius: 16px;
           box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
@@ -112,10 +117,10 @@
         }
         .paragraphs {
           row-gap: 1rem;
-          padding: 1.7rem;
+          padding: 1.5rem;
         }
         .paragraph__bold {
-          font-size: 2rem;
+          font-size: 1.4rem;
         }
         .paragraph {
           margin-left: 2rem;
@@ -124,8 +129,8 @@
       }
       @media (min-width: 1440px) {
         .component {
-          width: 20%;
-          padding: 0.7rem;
+          width: 50%;
+          padding: 1rem;
           border-radius: 16px;
           box-shadow: 0px 1px 15px 5px rgb(0, 0, 0, 0.03);
           /* row-gap: 1.6rem; */
@@ -136,10 +141,10 @@
         }
         .paragraphs {
           row-gap: 1rem;
+          padding: 1.2rem;
         }
         .paragraph__bold {
-          font-size: 1.3rem;
-          padding: 0 2rem;
+          font-size: 1.6rem;
         }
       }
     </style>
